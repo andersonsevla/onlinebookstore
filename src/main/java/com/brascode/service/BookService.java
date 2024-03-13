@@ -1,9 +1,9 @@
-package com.bittercode.service;
+package com.brascode.service;
 
 import java.util.List;
 
-import com.bittercode.model.Book;
-import com.bittercode.model.StoreException;
+import com.brascode.model.Book;
+import com.brascode.model.StoreException;
 
 public interface BookService {
 

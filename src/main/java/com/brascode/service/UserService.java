@@ -1,10 +1,10 @@
-package com.bittercode.service;
+package com.brascode.service;
 
 import javax.servlet.http.HttpSession;
 
-import com.bittercode.model.StoreException;
-import com.bittercode.model.User;
-import com.bittercode.model.UserRole;
+import com.brascode.model.StoreException;
+import com.brascode.model.User;
+import com.brascode.model.UserRole;
 
 public interface UserService {
 

@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.model.Book;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.BookService;
-import com.bittercode.service.impl.BookServiceImpl;
-import com.bittercode.util.StoreUtil;
+import com.brascode.model.Book;
+import com.brascode.model.UserRole;
+import com.brascode.service.BookService;
+import com.brascode.service.impl.BookServiceImpl;
+import com.brascode.util.StoreUtil;
 
 public class StoreBookServlet extends HttpServlet {
 
@@ -81,7 +81,7 @@ public class StoreBookServlet extends HttpServlet {
                 + "      <th scope=\"row\">" + book.getBarcode() + "</th>\r\n"
                 + "      <td>" + book.getName() + "</td>\r\n"
                 + "      <td>" + book.getAuthor() + "</td>\r\n"
-                + "      <td><span>&#8377;</span> " + book.getPrice() + "</td>\r\n"
+                + "      <td><span>&#8364;</span> " + book.getPrice() + "</td>\r\n"
                 + "      <td>"
                 + book.getQuantity()
                 + "      </td>\r\n"

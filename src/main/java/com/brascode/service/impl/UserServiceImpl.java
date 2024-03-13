@@ -1,4 +1,4 @@
-package com.bittercode.service.impl;
+package com.brascode.service.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,13 +7,13 @@ import java.sql.SQLException;
 
 import javax.servlet.http.HttpSession;
 
-import com.bittercode.constant.ResponseCode;
-import com.bittercode.constant.db.UsersDBConstants;
-import com.bittercode.model.StoreException;
-import com.bittercode.model.User;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.UserService;
-import com.bittercode.util.DBUtil;
+import com.brascode.constant.ResponseCode;
+import com.brascode.constant.db.UsersDBConstants;
+import com.brascode.model.StoreException;
+import com.brascode.model.User;
+import com.brascode.model.UserRole;
+import com.brascode.service.UserService;
+import com.brascode.util.DBUtil;
 
 public class UserServiceImpl implements UserService {
 
@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
         PreparedStatement ps;
         User user = null;
         try {
+            //validar o jwt
             String userType = UserRole.SELLER.equals(role) ? "1" : "2";
             ps = con.prepareStatement(loginUserQuery);
             ps.setString(1, email);

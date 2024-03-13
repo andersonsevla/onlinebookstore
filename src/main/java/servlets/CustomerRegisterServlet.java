@@ -9,13 +9,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.constant.ResponseCode;
-import com.bittercode.constant.db.UsersDBConstants;
-import com.bittercode.model.User;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.UserService;
-import com.bittercode.service.impl.UserServiceImpl;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.constant.ResponseCode;
+import com.brascode.constant.db.UsersDBConstants;
+import com.brascode.model.User;
+import com.brascode.model.UserRole;
+import com.brascode.service.UserService;
+import com.brascode.service.impl.UserServiceImpl;
 
 public class CustomerRegisterServlet extends HttpServlet {
 

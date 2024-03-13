@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.constant.db.UsersDBConstants;
-import com.bittercode.model.User;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.UserService;
-import com.bittercode.service.impl.UserServiceImpl;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.constant.db.UsersDBConstants;
+import com.brascode.model.User;
+import com.brascode.model.UserRole;
+import com.brascode.service.UserService;
+import com.brascode.service.impl.UserServiceImpl;
 
 public class CustomerLoginServlet extends HttpServlet {
 
@@ -25,6 +25,7 @@ public class CustomerLoginServlet extends HttpServlet {
         res.setContentType(BookStoreConstants.CONTENT_TYPE_TEXT_HTML);
         String uName = req.getParameter(UsersDBConstants.COLUMN_USERNAME);
         String pWord = req.getParameter(UsersDBConstants.COLUMN_PASSWORD);
+        System.out.println("passou aqui.");
         User user = authService.login(UserRole.CUSTOMER, uName, pWord, req.getSession());
 
         try {
@@ -37,7 +38,7 @@ public class CustomerLoginServlet extends HttpServlet {
                         + "    <br>\r\n"
                         + "    <table class=\"tab\">\r\n"
                         + "        <tr>\r\n"
-                        + "            <td><p>Welcome "+user.getFirstName()+", Happy Learning !!</p></td>\r\n"
+                        + "            <td><p>Welcome "+user.getFirstName()+", Manage your Store !!</p></td>\r\n"
                         + "        </tr>\r\n"
                         + "    </table>");
 
@@ -45,7 +46,7 @@ public class CustomerLoginServlet extends HttpServlet {
 
                 RequestDispatcher rd = req.getRequestDispatcher("CustomerLogin.html");
                 rd.include(req, res);
-                pw.println("<table class=\"tab\"><tr><td>Incorrect UserName or PassWord</td></tr></table>");
+                pw.println("<style> .tab {background-color: #ABBAEA;}</style> <table class=\"tab\"><tr><td>Incorrect UserName or PassWord</td></tr></table>");
             }
 
         } catch (Exception e) {

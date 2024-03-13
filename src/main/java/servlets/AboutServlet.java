@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.model.UserRole;
-import com.bittercode.util.StoreUtil;
+import com.brascode.model.UserRole;
+import com.brascode.util.StoreUtil;
 //Http Servlet extended class for showing the about information
 public class AboutServlet extends HttpServlet {
 
@@ -22,15 +22,15 @@ public class AboutServlet extends HttpServlet {
             RequestDispatcher rd = req.getRequestDispatcher("CustomerHome.html");
             rd.include(req, res);
             StoreUtil.setActiveTab(pw, "about");
-            pw.println("<iframe src=\"https://flowcv.me/shashirajraja\" class=\"holds-the-iframe\"\r\n"
-                    + "        title=\"My Personal Website\" width=\"100%\" height=\"100%\"></iframe>");
+            pw.println("<iframe src=\"https://flowcv.me/andres-anderson\" class=\"holds-the-iframe\"\r\n"
+                    + "        title=\"BookStore Website\" width=\"100%\" height=\"100%\"></iframe>");
 
         } else if (StoreUtil.isLoggedIn(UserRole.SELLER, req.getSession())) {
             RequestDispatcher rd = req.getRequestDispatcher("SellerHome.html");
             rd.include(req, res);
             StoreUtil.setActiveTab(pw, "about");
-            pw.println("<iframe src=\"https://flowcv.me/shashirajraja\" class=\"holds-the-iframe\"\r\n"
-                    + "        title=\"My Personal Website\" width=\"100%\" height=\"100%\"></iframe>");
+            pw.println("<iframe src=\"https://flowcv.me/andres-anderson\" class=\"holds-the-iframe\"\r\n"
+                    + "        title=\"BookStore Website\" width=\"100%\" height=\"100%\"></iframe>");
 
         } else {
             //If the user is not logged in, ask to login first

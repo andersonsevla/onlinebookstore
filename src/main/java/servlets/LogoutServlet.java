@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.service.UserService;
-import com.bittercode.service.impl.UserServiceImpl;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.service.UserService;
+import com.brascode.service.impl.UserServiceImpl;
 
 public class LogoutServlet extends HttpServlet {
 

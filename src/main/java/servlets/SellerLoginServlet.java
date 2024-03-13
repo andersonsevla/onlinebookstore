@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.constant.db.UsersDBConstants;
-import com.bittercode.model.User;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.UserService;
-import com.bittercode.service.impl.UserServiceImpl;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.constant.db.UsersDBConstants;
+import com.brascode.model.User;
+import com.brascode.model.UserRole;
+import com.brascode.service.UserService;
+import com.brascode.service.impl.UserServiceImpl;
 
 public class SellerLoginServlet extends HttpServlet {
 
@@ -35,14 +35,15 @@ public class SellerLoginServlet extends HttpServlet {
                         + "    <br>\r\n"
                         + "    <table class=\"tab\">\r\n"
                         + "        <tr>\r\n"
-                        + "            <td><p>Welcome "+user.getFirstName()+", Happy Learning !!</p></td>\r\n"
+                        + "            <td><p>Welcome "+user.getFirstName()+", Manage your Store!!</p></td>\r\n"
                         + "        </tr>\r\n"
                         + "    </table>");
             } else {
 
                 RequestDispatcher rd = req.getRequestDispatcher("SellerLogin.html");
                 rd.include(req, res);
-                pw.println("<div class=\"tab\">Incorrect UserName or PassWord</div>");
+                
+                pw.println("<style> .tab {background-color: #ABBAEA;}</style> <div class=\"tab\">Incorrect UserName or PassWord</div>");
             }
 
         } catch (Exception e) {

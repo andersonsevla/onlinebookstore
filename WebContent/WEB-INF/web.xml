@@ -35,20 +35,20 @@
 		<url-pattern>/userlog</url-pattern>
 	</servlet-mapping>
 	<servlet>
-		<servlet-name>AboutServlet</servlet-name>
-		<servlet-class>servlets.AboutServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AboutServlet</servlet-name>
-		<url-pattern>/about</url-pattern>
-	</servlet-mapping>
-	<servlet>
 		<servlet-name>LogoutServlet</servlet-name>
 		<servlet-class>servlets.LogoutServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LogoutServlet</servlet-name>
 		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AboutServlet</servlet-name>
+		<servlet-class>servlets.AboutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AboutServlet</servlet-name>
+		<url-pattern>/about</url-pattern>
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>CustomerRegisterServlet</servlet-name>

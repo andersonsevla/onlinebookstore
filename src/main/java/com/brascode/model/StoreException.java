@@ -1,8 +1,8 @@
-package com.bittercode.model;
+package com.brascode.model;
 
 import java.io.IOException;
 
-import com.bittercode.constant.ResponseCode;
+import com.brascode.constant.ResponseCode;
 
 public class StoreException extends IOException {
 

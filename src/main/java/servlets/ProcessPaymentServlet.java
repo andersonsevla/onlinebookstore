@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.model.Book;
-import com.bittercode.model.Cart;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.BookService;
-import com.bittercode.service.impl.BookServiceImpl;
-import com.bittercode.util.StoreUtil;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.model.Book;
+import com.brascode.model.Cart;
+import com.brascode.model.UserRole;
+import com.brascode.service.BookService;
+import com.brascode.service.impl.BookServiceImpl;
+import com.brascode.util.StoreUtil;
 
 public class ProcessPaymentServlet extends HttpServlet {
 
@@ -92,7 +92,7 @@ public class ProcessPaymentServlet extends HttpServlet {
                 + "                    </div>\r\n"
                 + "                    <div class=\"col-sm-6\">\r\n"
                 + "                        <p class=\"card-text\">\r\n"
-                + "                        Amout Paid: <span style=\"font-weight:bold; color:green\"> &#8377; " + bPrice
+                + "                        Amout Paid: <span style=\"font-weight:bold; color:green\"> &#8364; " + bPrice
                 + " </span>\r\n"
                 + "                        </p>\r\n"
                 + button

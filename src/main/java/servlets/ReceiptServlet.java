@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.model.Book;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.BookService;
-import com.bittercode.service.impl.BookServiceImpl;
-import com.bittercode.util.StoreUtil;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.model.Book;
+import com.brascode.model.UserRole;
+import com.brascode.service.BookService;
+import com.brascode.service.impl.BookServiceImpl;
+import com.brascode.util.StoreUtil;
 
 public class ReceiptServlet extends HttpServlet {
     BookService bookService = new BookServiceImpl();

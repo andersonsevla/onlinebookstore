@@ -1,4 +1,4 @@
-package com.bittercode.util;
+package com.brascode.util;
 
 import java.io.IOException;
 import java.io.InputStream;

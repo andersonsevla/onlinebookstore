@@ -1,11 +1,11 @@
-package com.bittercode.util;
+package com.brascode.util;
 
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import com.bittercode.model.UserRole;
+import com.brascode.model.UserRole;
 
 /*
  * Store UTil File To Store Commonly used methods

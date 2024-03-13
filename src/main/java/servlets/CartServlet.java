@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.bittercode.constant.BookStoreConstants;
-import com.bittercode.model.Book;
-import com.bittercode.model.Cart;
-import com.bittercode.model.UserRole;
-import com.bittercode.service.BookService;
-import com.bittercode.service.impl.BookServiceImpl;
-import com.bittercode.util.StoreUtil;
+import com.brascode.constant.BookStoreConstants;
+import com.brascode.model.Book;
+import com.brascode.model.Cart;
+import com.brascode.model.UserRole;
+import com.brascode.service.BookService;
+import com.brascode.service.impl.BookServiceImpl;
+import com.brascode.util.StoreUtil;
 
 public class CartServlet extends HttpServlet {
 
@@ -88,7 +88,7 @@ public class CartServlet extends HttpServlet {
             if (amountToPay > 0) {
                 pw.println("    <tr style='background-color:green'>\r\n"
                         + "      <th scope=\"row\" colspan='5' style='color:yellow; text-align:center;'> Total Amount To Pay </th>\r\n"
-                        + "      <td colspan='1' style='color:white; font-weight:bold'><span>&#8377;</span> "
+                        + "      <td colspan='1' style='color:white; font-weight:bold'><span>&#8364;</span> "
                         + amountToPay
                         + "</td>\r\n"
                         + "    </tr>\r\n");
@@ -98,7 +98,7 @@ public class CartServlet extends HttpServlet {
             if (amountToPay > 0) {
                 pw.println("<div style='text-align:right; margin-right:20px;'>\r\n"
                         + "<form action=\"checkout\" method=\"post\">"
-                        + "<input type='submit' class=\"btn btn-primary\" name='pay' value='Proceed to Pay &#8377; "
+                        + "<input type='submit' class=\"btn btn-primary\" name='pay' value='Proceed to Pay &#8364; "
                         + amountToPay + "'/></form>"
                         + "    </div>");
             }
@@ -113,12 +113,12 @@ public class CartServlet extends HttpServlet {
                 + "      <th scope=\"row\">" + book.getBarcode() + "</th>\r\n"
                 + "      <td>" + book.getName() + "</td>\r\n"
                 + "      <td>" + book.getAuthor() + "</td>\r\n"
-                + "      <td><span>&#8377;</span> " + book.getPrice() + "</td>\r\n"
+                + "      <td><span>&#8364;</span> " + book.getPrice() + "</td>\r\n"
                 + "      <td><form method='post' action='cart'><button type='submit' name='removeFromCart' class=\"glyphicon glyphicon-minus btn btn-danger\"></button> "
                 + "<input type='hidden' name='selectedBookId' value='" + book.getBarcode() + "'/>"
                 + cart.getQuantity()
                 + " <button type='submit' name='addToCart' class=\"glyphicon glyphicon-plus btn btn-success\"></button></form></td>\r\n"
-                + "      <td><span>&#8377;</span> " + (book.getPrice() * cart.getQuantity()) + "</td>\r\n"
+                + "      <td><span>&#8364;</span> " + (book.getPrice() * cart.getQuantity()) + "</td>\r\n"
                 + "    </tr>\r\n";
     }
 

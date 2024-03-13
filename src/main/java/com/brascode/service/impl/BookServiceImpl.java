@@ -1,4 +1,4 @@
-package com.bittercode.service.impl;
+package com.brascode.service.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,12 +7,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bittercode.constant.ResponseCode;
-import com.bittercode.constant.db.BooksDBConstants;
-import com.bittercode.model.Book;
-import com.bittercode.model.StoreException;
-import com.bittercode.service.BookService;
-import com.bittercode.util.DBUtil;
+import com.brascode.constant.ResponseCode;
+import com.brascode.constant.db.BooksDBConstants;
+import com.brascode.model.Book;
+import com.brascode.model.StoreException;
+import com.brascode.service.BookService;
+import com.brascode.util.DBUtil;
 
 public class BookServiceImpl implements BookService {
 

@@ -1,11 +1,11 @@
-package com.bittercode.util;
+package com.brascode.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import com.bittercode.constant.ResponseCode;
-import com.bittercode.model.StoreException;
+import com.brascode.constant.ResponseCode;
+import com.brascode.model.StoreException;
 
 public class DBUtil {
 
